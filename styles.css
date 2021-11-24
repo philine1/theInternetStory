@@ -68,7 +68,7 @@ h3 {
 }
 
 .carousel-item {
-    height: 40vh;
+    height: 50vh;
 }
 
 .pic {
@@ -81,4 +81,24 @@ h3 {
 
 .carousel-item {
     background: grey;
+}
+
+.drow {
+    height: 600px;
+}
+
+/* page three */
+
+.map {
+    width: 80%;
+    margin: auto;
+    padding: 79px 0;
+}
+
+.map iframe {
+    width: 100%;
+}
+
+.address { 
+    margin-top: 20px;
 }

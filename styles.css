@@ -1,18 +1,37 @@
 * {
-    font-family:fantasy
+    font-family:fantasy;
 }
 
 .title h1 {
-    text-align: center;
-
-}
+    /* let it fill the whole container */
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color: white;
+    font-size: 52px;
+  }
+  .title h1:before {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
+  }
+  .title h1 {
+    display: inline-block;
+    vertical-align: middle;
+  }
 
 span {
-    color:white;
+    color:red;
 }
 
 .title {
-    background-color: red;
+    background-color: black;
+    height: 13vh;
+    text-align: center;
+    position: relative;
 }
 
 /* home page content */
@@ -32,21 +51,33 @@ span {
 
 .nav-tabs {
     justify-content: center;
+    
+}
+
+.nav-pills {
+    justify-content: center;
+    padding: 5px;
 }
 
 .nav-link {
     color: red;
+    border: 1px solid black;
+
 }
 
 /* About us tab pane */
 
 .about {
     text-align: center;
-    margin-top: 25px;
+    margin-top: 120px;
     padding: 20px;
     border-left: 1px solid grey;
     border-right: 1px solid grey;
+    background-image: url(https://media.istockphoto.com/photos/newspaper-with-old-grunge-vintage-unreadable-paper-texture-background-picture-id1130355559?b=1&k=20&m=1130355559&s=170667a&w=0&h=z-5_omTEewRaHvZxWXufBciT-SHhfIXHuAecGAWx-lo=);
+    background-position: center;
+    background-size: cover;
 }
+
 
 /* Ingredients and Recipes */
 
@@ -68,12 +99,6 @@ h3 {
     height: 100%;
   } 
 
-.carousel-control-next ,.carousel-control-prev{
-    background: hotpink;
-    border-left: 1px solid black;
-    
-}
-
 .carousel-item {
     height: 50vh;
 }
@@ -92,13 +117,34 @@ h3 {
     text-align: center;
     padding: 10px;
     margin-top: 40px;
+    color: white;
 }
 
 .ourrecipes {
-    background: green;
+    background: #007bff;
     border-radius: 30px;
 
 }
+
+/* grid */
+
+.col-md-4 h5 {
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+/* card */
+
+.btn-success, .btn-default {
+    float:right;
+}
+
+
+.card {
+    box-shadow: 3px 3px 1px #aaaaaa;
+    border-radius: 0;
+}
+
 /* page three */
 
 .map {

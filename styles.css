@@ -161,4 +161,8 @@ h3 {
     margin-top: 20px;
 }
 
+/* footer */
 
+.page-footer {
+    background: black;
+}
